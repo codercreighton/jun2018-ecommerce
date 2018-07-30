@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import 'bootstrap-sprockets';
+ @import 'bootstrap';
+ @import 'font-awesome';
+
+
+/*font-family: 'Berkshire Swash', cursive;
+font-family: 'Quattrocento Sans', sans-serif;*/
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome';
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Cinzel|Quattrocento+Sans');
+
+
+
+body{
+	background-color: #e5e0ce; 
+}
+
+ .padded{
+	padding-top: 50px;
+	text-align: center;}
+
+ .title {
+ 	font-family: 'Berkshire Swash', cursive;
+}
+
+.title-nav{
+	padding: 10px 10px 0px 0px;
+	font-size: 30px;
+	color: white;
+}
+
+.title2 {
+	text-align: center;
+ 	font-family: 'Quattrocento Sans', sans-serif;
+}
+
+.modal-name{
+	font-family: 'Cinzel', serif;
+}
+
+.well-storefront{
+	height: 400px;
+	padding-top: 20px;
+}
+
+.well, .modal .modal-dialog .modal-content {
+
+	background-color: #d1ccba;
+}
+
+.navbar-default {
+	background-color: #988383;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: white;
+}
+body.modal-open{
+	background-color: #d1ccba;
+}
+
+.pic-space{
+	height:210px;
+	width: 210px;
+}
+
+.icon-pic{
+	height:50px;
+	width: 50px;
+}
+
+.cart-pic{
+	height: 50px;
+	width: auto;
+ }
+
+
+ .storefront-pic{
+ 	height: 150px;
+ 	width: auto;
+
+ }
