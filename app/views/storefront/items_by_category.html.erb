@@ -1,2 +1,5 @@
-<h1>Storefront#items_by_category</h1>
-<p>Find me in app/views/storefront/items_by_category.html.erb</p>
+<h3>Here are the products in our <%= @category.name %> department:</h3>
+
+<div>
+  <%= render 'productloop' %>
+</div>
