@@ -1,0 +1,21 @@
+<h3>List of Users: </h3>
+
+<div>
+	<% @users.each do |user| %>
+
+		<div class="well">
+			<p>Email: <%= user.email %></p>
+			<p>Role: <%= user.role %></p>
+
+			<% if can? :manage, User %>
+
+				<%= form_tag edit_user_path do %>
+						<%= select_tag(:role, options_for_select([ "admin", "guest" ]), :prompt => "Please select") %>
+						  <%= hidden_field_tag :id, user.id %>
+						  <%= submit_tag "Update Role", class: "btn btn-primary" %>
+				<% end %>
+			<% end %>	
+			<%= link_to "Delete User", delete_user_path(id: user.id) %>
+		</div>
+	<% end %>
+</div>
